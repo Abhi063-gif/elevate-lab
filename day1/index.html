@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Responsive Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Abhishek Mishra</h2>
+                </div>
+                
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                     <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hello! I'm Abhishek Mishra</h1>
+                <p class="hero-description">
+                   I'm currently pursuing my B.Sc IT degree at DAV college Jalandhar. I'm very thankful to elevate labs to give me this internship opportunity to improve web development skills. 
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="cta-button primary">Contact me</a>
+                    <a href="#about" class="cta-button secondary">About</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/abhi.jpg" alt="Abhishek Mishra" class="profile-image">
+                <div class="hero-graphic">
+                    <div class="graphic-element circle1"></div>
+                    <div class="graphic-element circle2"></div>
+                    <div class="graphic-element circle3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know more about my journey</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Passionate Web Developer & Tech Enthusiast</h3>
+                    <p>
+                        As a fresh and passionate web developer, I'm currently pursuing my B.Sc IT degree at DAV College Jalandhar. 
+                        My journey in web development began with curiosity and has grown into a genuine passion for creating 
+                        innovative digital solutions.
+                    </p>
+                    <p>
+                        I'm grateful to Elevate Labs for providing me with this internship opportunity, which has significantly 
+                        enhanced my web development skills. As a fresher in this field, I bring enthusiasm, dedication, and a 
+                        strong willingness to learn and adapt to new technologies.
+                    </p>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-container">
+            <div class="section-header">
+                <h2 class="section-title">My Services</h2>
+                <p class="section-subtitle">What I can offer</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Development</h3>
+                    <p>Creating modern and responsive websites using latest technologies</p>
+                </div>
+                <div class="service-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Designing user-friendly interfaces with great user experience</p>
+                </div>
+                <div class="service-card">
+                    <h3>Frontend Development</h3>
+                    <p>Building interactive and dynamic frontend applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">Let's get in touch and work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always open to discussing new opportunities and interesting projects. 
+                       Feel free to reach out if you'd like to collaborate or just have a chat about web development!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h4>Email</h4>
+                            <p>a4abhi078@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Location</h4>
+                            <p>Jalandhar, Punjab, India</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Phone</h4>
+                            <p>+91 6284533286</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form class="contact-form-container">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Abhishek Mishra</h3>
+                    <p>A passionate web developer</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                       
+                        <a href="https://www.linkedin.com/in/abhishek-mishra-4292a3315/" class="social-link linkedin">in</a>
+                        <a href="https://www.instagram.com/mr_abhishek063?igsh=MXU2ZjdkbTNiaTh6bg==" class="social-link instagram">ig</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Abhishek Mishra. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
